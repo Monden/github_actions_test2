@@ -4,9 +4,7 @@ on:
   push:
     branches:
       - main
-defaults:
-  run:
-    working-directory: ./test-repo2
+
 jobs:
   deploy_testtest:
     runs-on: ubuntu-latest
@@ -23,6 +21,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@xxxxjp'
           cache: 'yarn'
+          cache-dependency-path: ./test-repo2/yarn.lock
       - name: Setup nx
         run: |
           yarn global add nx
