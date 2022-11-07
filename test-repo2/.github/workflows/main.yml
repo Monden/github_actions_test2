@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: '16'
           registry-url: https://npm.pkg.github.com/
-          scope: '@caddijp'
+          scope: '@xxxxjp'
           cache: 'yarn'
       - name: Setup nx
         run: |
