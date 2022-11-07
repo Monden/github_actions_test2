@@ -4,12 +4,12 @@ on:
   push:
     branches:
       - main
+defaults:
+  run:
+    working-directory: ./test-repo2
 jobs:
   deploy_testtest:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./test-repo2
     steps:
       - name: Checkout by push
         uses: actions/checkout@v3
@@ -17,7 +17,6 @@ jobs:
         with:
           fetch-depth: 0
       - name: Setup node
-        working-directory: ./test-repo2
         uses: actions/setup-node@v3
         with:
           node-version: '16'
