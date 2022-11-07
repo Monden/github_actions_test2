@@ -7,6 +7,9 @@ on:
 jobs:
   deploy_testtest:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./test-repo2
     steps:
       - name: Checkout by push
         uses: actions/checkout@v3
@@ -15,7 +18,6 @@ jobs:
           fetch-depth: 0
       - name: Setup node
         uses: actions/setup-node@v3
-        working-directory: ./test-repo2
         with:
           node-version: '16'
           registry-url: https://npm.pkg.github.com/
@@ -25,9 +27,5 @@ jobs:
         run: |
           yarn global add nx
           yarn install
-        working-directory: ./test-repo2
       - name: Build one app
         run: nx run nextapp:build
-        working-directory: ./test-repo2
-
-
