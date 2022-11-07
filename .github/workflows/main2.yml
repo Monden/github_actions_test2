@@ -23,7 +23,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@xxxxjp'
           cache: 'yarn'
-        working-directory: ./test-repo2
       - name: Setup nx
         run: |
           yarn global add nx
