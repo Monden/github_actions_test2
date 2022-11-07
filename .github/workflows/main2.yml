@@ -17,6 +17,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Setup node
+        working-directory: ./test-repo2
         uses: actions/setup-node@v3
         with:
           node-version: '16'
