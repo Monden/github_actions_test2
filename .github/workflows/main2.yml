@@ -28,3 +28,4 @@ jobs:
           yarn install
       - name: Build one app
         run: nx run nextapp:build
+        working-directory: ./test-repo2
