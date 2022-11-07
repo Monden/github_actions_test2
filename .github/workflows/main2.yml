@@ -24,8 +24,8 @@ jobs:
           cache-dependency-path: ./test-repo2/yarn.lock
       - name: Setup nx
         run: |
-          yarn global add nx
           yarn install
+          yarn global add nx
         working-directory: ./test-repo2
       - name: Build one app
         run: nx run nextapp:build
