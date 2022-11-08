@@ -3,7 +3,7 @@ name: workflows test2 in main branch
 on:
   push:
     branches:
-      - feature/**
+      - main
 
 jobs:
   deploy_testtest:
