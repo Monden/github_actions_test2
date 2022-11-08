@@ -24,7 +24,7 @@ jobs:
         run: |
           yarn global add nx
           yarn install
-      - name: Build one app
-        run: nx run nextapp:build
+      # - name: Build one app
+      #   run: nx run nextapp:build
 
 
