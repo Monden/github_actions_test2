@@ -3,7 +3,6 @@ name: workflows test2
 on:
   push:
     branches:
-      - 'main'
       - 'feature/**'
 
 jobs:
