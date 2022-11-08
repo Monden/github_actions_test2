@@ -1,4 +1,4 @@
-name: workflows test2
+name: workflows test2 in feature/1 branch
 
 on:
   push:
