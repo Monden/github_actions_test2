@@ -1,2 +1,2 @@
 # test-repo2
-# in main 1
+# in main 1　まいｎ
