@@ -18,7 +18,7 @@ jobs:
       - name: echo
         run: echo ${{ github.ref_name }}
       - name: exit if feature
-        if: github.ref_name !== 'develop'
+        if: github.ref_name != 'develop'
         run: exit 0
       - name: Setup node
         uses: actions/setup-node@v3
