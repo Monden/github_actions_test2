@@ -3,7 +3,7 @@ name: workflows test2
 on:
   push:
     branches:
-      - 'feature/**'
+      - feature/**
 
 jobs:
   deploy_testtest:
