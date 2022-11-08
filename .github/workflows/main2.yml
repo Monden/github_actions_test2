@@ -1,4 +1,4 @@
-name: workflows test2
+name: workflows test2 in main branch
 
 on:
   push:
